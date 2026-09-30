@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { images } from "@/data/photos";
+import { Photo } from "@/components/photo";
+
+const stories = [{ slug: "amanda-and-josh", name: "Amanda & Josh", place: "Kingston, Jamaica", year: "2026", photo: images.wedding1 }, { slug: "sarah-and-daniel", name: "Sarah & Daniel", place: "Montego Bay, Jamaica", year: "2025", photo: images.wedding2 }];
+export default function Weddings() { return <main className="pt-32"><section className="mx-auto max-w-[1600px] px-5 md:px-8"><p className="eyebrow mb-5 text-[#79756d]">Wedding stories</p><h1 className="serif max-w-3xl text-5xl leading-[.94] tracking-[-.045em] md:text-8xl">Stories I&apos;ve photographed.</h1></section><section className="mx-auto max-w-[1600px] space-y-20 px-5 py-20 md:space-y-32 md:px-8 md:py-32">{stories.map((story, i) => <Link key={story.slug} href={`/weddings/${story.slug}`} className={`group block ${i === 1 ? "md:ml-[17%] md:w-[83%]" : ""}`}><Photo photo={story.photo} className="h-[125vw] max-h-[1000px] md:h-[61vw]" /><div className="mt-4 grid grid-cols-[1fr_auto] gap-4"><div><h2 className="serif text-3xl md:text-5xl">{story.name}</h2><p className="eyebrow mt-2 text-[#79756d]">{story.place}</p></div><p className="eyebrow text-[#79756d]">{story.year}</p></div></Link>)}</section></main>; }
