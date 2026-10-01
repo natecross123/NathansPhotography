@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Volumes/Mac%20Drive/Nate%20school%20work%20/NathansPhotography/app/layout.tsx"],"sourcesContent":["import type { Metadata } from \"next\";\nimport \"./globals.css\";\nimport { Navigation } from \"@/components/navigation\";\n\nexport const metadata: Metadata = { title: \"Nathan Crossdale — Photographer\", description: \"Jamaica-based wedding and editorial photographer.\" };\n\nexport default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {\n  return <html lang=\"en\"><body><Navigation />{children}</body></html>;\n}\n"],"names":["metadata","title","description","RootLayout","children","lang","Navigation"],"mappings":";;;;;;;;;;;;;;;AAIO,MAAMA,WAAqB;IAAEC,OAAO;IAAmCC,aAAa;AAAoD;AAEhI,SAASC,WAAW,EAAEC,QAAQ,EAA2C;IACtF,qBAAO,8OAAC;QAAKC,MAAK;kBAAK,cAAA,8OAAC;;8BAAK,8OAACC;;;;;gBAAcF;;;;;;;;;;;;AAC9C"}},
+    {"offset": {"line": 54, "column": 0}, "map": {"version":3,"sources":["file:///Volumes/Mac%20Drive/Nate%20school%20work%20/NathansPhotography/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
+}
